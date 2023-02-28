@@ -1,10 +1,47 @@
-h1,h2,h3,p {
+/*Body*/
+h1,h2,h3,p, button,ul {
    font-family: 'Raleway', sans-serif;
 }
+/*Nav*/
+.Logo-Booki {
+    width: 61.09px;
+    height: 19px;
+    border-radius: 0px;
+    }
+li :hover {
+    color:#0065FC
+    }
+.Hébergements,.Activités {
+    list-style-type: none;
+    display: inline;
+    }
+nav {
+    display: flex;
+    text-align: right;
+    gap: 1200px;
+    }
+ul  {
+    padding:0;
+    margin:0;
+    list-style-type:none;
+    }
+li  {
+   
+    float:left; 
+    }
+ul li a {
+    display:block;
+    float:left;   
+    width:100px;
+    }
+
+    /*Header*/
 h1 {
 font-weight: 700;
 font-size: 22px;
 line-height: 26px;
+;
+
 }
 p {
 font-weight: 400;
@@ -17,19 +54,29 @@ h2 {
     line-height: 26px;
 }
 /* Header */
-.Logo-Booki {
-    position: absolute;
-    width: 61.09px;
-    height: 19px;
-    }
+  .localisation{
+    display: flex;
+    background-color:#F2F2F2;
+    background-size: 2px;
+    border-radius: 15px;
+    color: #0065FCz;
 
-    .header {
-        display:flex;
  }
 
-/* Barres de navigations */
+ .recherche {
+    color: #0065FC;
+ }
+/*Main section 1*/
+button {
+    border-style: solid;
+    border-radius: 25px;
+    border-width :2px;
+    background-color:white;
+    border-color: #F2F2F2;
+}
  .Filtres {
     display:flex;
+    gap : 30px;
  }
  p span {
     color:black
@@ -37,28 +84,45 @@ h2 {
 .Filtres p { 
     font-weight: bold
 }
-.Filtres {
-    color:#0065FC;
 
- }
  .info {
     display:flex;
     color:#0065FC
  }
 
  /* Hébergements à Marseille */
+ h2 {
+    background-color: #F2F2F2;
+ }
+ 
 .Main {
     display:flex;
+    background-color: #F2F2F2;
+    border-radius: 25px 25px 0px 0px;
 }
+img {
+    width: 246px;
+    height: auto;
+    border-radius: 20px;
+}
+
 .La-canebière,.Port,.Mouettes,.Mer,.LePanier,.ChezAmina {
     color:#0065FC;
+    display: block;
 }
 
 .Main2 {
     display:flex;
+    background-color: #F2F2F2;
+    border-radius: 0px 0px 25px 25px;
 }
 
+
 /* Aside */
+aside {
+    background-color: #F2F2F2;
+    border-radius: 25px;
+}
 .Icône6 {
     display: flex;
     color: #0065fc;
@@ -76,23 +140,16 @@ h2 {
 .ActivitésMarseille {
     display: flex;
 }
-.Vieux-Port p {
-    font-weight: bold;
-}
-.Pomègues p {
-    font-weight: bold;
-}
-.Calanques p {
-    font-weight: bold;
-}
-.NotreDame p {
-    font-weight: bold;
-}
+
 /* Footer */
 
 .Bas-de-page {
     display: flex;
+    background-color: #F2F2F2;
+    margin-left: 48px;
+    margin-right: 48px;
+    gap: 180px;
 }
- .àpropos {
-    font-weight: bold;
- }
+.àpropos {
+    margin-left: 70px;
+}
