@@ -54,17 +54,15 @@ h2 {
     line-height: 26px;
 }
 /* Header */
-  .localisation{
-    display: flex;
+  .loc{
     background-color:#F2F2F2;
-    background-size: 2px;
-    border-radius: 15px;
-    color: #0065FCz;
-
- }
+    border-radius: 20px 0px 0px 20px;}
 
  .recherche {
     color: #0065FC;
+ }
+ .localisation {
+    display: flex;
  }
 /*Main section 1*/
 button {
@@ -74,6 +72,12 @@ button {
     background-color:white;
     border-color: #F2F2F2;
 }
+.Rechercher {
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0px 20px 20px 0px;
+}
+
  .Filtres {
     display:flex;
     gap : 30px;
@@ -84,22 +88,23 @@ button {
 .Filtres p { 
     font-weight: bold
 }
-
  .info {
-    display:flex;
+    display: flex;
     color:#0065FC
  }
 
  /* Hébergements à Marseille */
  h2 {
     background-color: #F2F2F2;
+    
  }
- 
-.Main {
+.Main1 {
     display:flex;
+    gap: 40px;
     background-color: #F2F2F2;
     border-radius: 25px 25px 0px 0px;
 }
+
 img {
     width: 246px;
     height: auto;
@@ -113,8 +118,10 @@ img {
 
 .Main2 {
     display:flex;
+    gap: 40px;
     background-color: #F2F2F2;
     border-radius: 0px 0px 25px 25px;
+    float: left;
 }
 
 
@@ -122,6 +129,9 @@ img {
 aside {
     background-color: #F2F2F2;
     border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+ 
 }
 .Icône6 {
     display: flex;
@@ -130,7 +140,7 @@ aside {
 
 .Les-plus-populaires {
     display: flex;
-    flex-direction: column;
+  
 }
 .Matin,.Eau,.Bleu-Blanc {
     color:#0065FC
@@ -139,6 +149,7 @@ aside {
 /* Activités à Marseille */
 .ActivitésMarseille {
     display: flex;
+    float: left;
 }
 
 /* Footer */
@@ -146,10 +157,15 @@ aside {
 .Bas-de-page {
     display: flex;
     background-color: #F2F2F2;
-    margin-left: 48px;
-    margin-right: 48px;
     gap: 180px;
+    float:left;
+    justify-content: space-around;
 }
 .àpropos {
     margin-left: 70px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 20px;
+    object-fit: cover;
 }
