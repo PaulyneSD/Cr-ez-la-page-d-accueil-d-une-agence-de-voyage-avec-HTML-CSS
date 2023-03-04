@@ -1,6 +1,7 @@
 /*Body*/
 h1,h2,h3,p, button,ul {
    font-family: 'Raleway', sans-serif;
+
 }
 /*Nav*/
 .Logo-Booki {
@@ -93,6 +94,9 @@ button {
     color:#0065FC
  }
 
+ .star-color {
+    color: #0065FC;
+ }
  /* Hébergements à Marseille */
  h2 {
     background-color: #F2F2F2;
@@ -103,6 +107,7 @@ button {
     gap: 40px;
     background-color: #F2F2F2;
     border-radius: 25px 25px 0px 0px;
+    
 }
 
 img {
@@ -140,7 +145,7 @@ aside {
 
 .Les-plus-populaires {
     display: flex;
-  
+    justify-content: space-between; 
 }
 .Matin,.Eau,.Bleu-Blanc {
     color:#0065FC
@@ -166,5 +171,7 @@ aside {
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: white;
     border-radius: 20px;
+    padding: 5px;
 }
