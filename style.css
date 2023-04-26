@@ -60,9 +60,10 @@ a:visited {
     color: black;
 }
 
-a:hover{
+a:hover {
     color: #0065FC;
 }
+
 
 h1 {
     font-weight: 700;
@@ -82,13 +83,9 @@ p {
     line-height: 19px;
 }
 
-h2 {
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 26px;
-}
 
 /* Filtre & Loc*/
+
 
 .loc{
     background-color:#F2F2F2;
@@ -123,10 +120,6 @@ button {
     width: 282px;    
 }
 
-.Filtres button:hover {    
-background-color:  #DEEBFF;
-}
-
 .Rechercher {
     background-color: #0065FC;
     color: white;
@@ -136,7 +129,12 @@ background-color:  #DEEBFF;
 }
 
 .search {
-  visibility: hidden;
+    visibility: hidden;
+  }
+  
+
+.Filtres button:hover {    
+background-color:  #DEEBFF;
 }
 
 .Filtres {
@@ -145,19 +143,9 @@ background-color:  #DEEBFF;
     margin-top: 32px;    
 }
 
-p span {
-    color:black;
-}
-
 .Filtres p { 
     font-weight: bold;
     font-size: 18px;   
-}
-
-.info {
-    display: flex;
-    color:#0065FC;
-    margin-top: 25px;   
 }
 
 .star-color,.fa-person,.fa-heart, .fa-dog {
@@ -166,25 +154,14 @@ p span {
     margin-left: 10px;
 }
 
-.section-title{
-    margin: 0;
-    font-size: 22px;    
+p span {
+    color:black;
 }
 
-.fa-chart-line {
-    color: #0065FC;
-}
-
-.euro {
-    font-weight: 700;
-}
-
-.fa-star {
-    color: #0065FC;
-}
-
-.neutralStar {
-    color:#F2F2F2
+.info {
+    display: flex;
+    color:#0065FC;
+    margin-top: 25px;   
 }
 
 /* Hebergements And Populaires */
@@ -215,8 +192,34 @@ p span {
 .card-title {
     font-size: 16px;
 }
+.fa-chart-line {
+    color: #0065FC;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.fa-star {
+    color: #0065FC;
+}
+
+.neutralStar {
+    color:#F2F2F2
+}
 
 /* Hebergements */
+
+.section-title{
+    margin: 0;
+    font-size: 22px;    
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
 
 .h-card {
     background-color: white;
@@ -400,6 +403,13 @@ body {
     margin-right: 50px;
 }    
 
+/* Header & Nav */
+
+.Filtres {
+   gap : 0px;
+   justify-content: space-around;
+}
+
 /* Hebergements And Populaires */
  
 .hebergements-and-populaires {
@@ -412,6 +422,11 @@ body {
  .hebergements {
     width: 98%;
     height: auto;
+ }
+
+ .hebergements-cards {
+    gap:37px;
+    margin-bottom: 0px;
  }
 
 .h-card {
@@ -504,11 +519,7 @@ header {
 header .logo {
     margin-left: 20px;
 }
-    
-.info, .Filtres, .icentreville, .localisation {
-    margin-left: 20px;
-}
-  
+      
 p {
     margin-right: 20px;
 }
@@ -528,15 +539,15 @@ nav ul {
 }
 
 .search {
-    visibility: visible !important;
+    visibility: visible ;
     background-color: #0065FC;
     color: white;
-    border-radius:15px;
+    border-radius: 0px 15px 15px 0px;
     padding: 15px;
 }
 
 .Marseille {
-    width:235px;
+    width:255px;
     height: 49px;
 }
 
@@ -550,10 +561,14 @@ nav ul {
     width: 162.5px;
 } 
 
+.info, .Filtres, .icentreville, .localisation {
+    margin-left: 30px;
+}
+
 /* Body */
 
 body {
-    margin-right:0px;
+    margin-right: 0px;
     margin-left:0px;
 }
 
@@ -569,36 +584,6 @@ body {
 padding-top:35px
 }
 
-/* Hebergements And Populaires */
-    
-.hebergements-and-populaires section{
-    padding: 0px;
-    background-color: white;
-        
-}
-  
-.hebergements-and-populaires{
-    background-color: white;
-    margin-right: 0px;
-}
-
-.hebergements-cards {
-    flex-direction: column;
-    height: auto;
-    margin-bottom: 5px;
-    display: flex;      
-}
-
-.h-card {
-    margin-right: 0px;
-    width: 87%;
-}
-   
-.hebergements-cards img {
-    width: 100%;
-    object-fit: cover;
-}
-    
 /* Populaires */
 
 .populaires {
@@ -639,10 +624,40 @@ padding-top:35px
     font-size: 13px;
 }
 
+/* Hebergements And Populaires */
+    
+.hebergements-and-populaires section{
+    padding: 0px;
+    background-color: white;
+        
+}
+  
+.hebergements-and-populaires{
+    background-color: white;
+    margin-right: -6px;
+}
+
+.hebergements-cards {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 5px;
+    display: flex;      
+}
+
+.h-card {
+    margin-right: 0px;
+    width: 87%;
+}
+   
+.hebergements-cards img {
+    width: 100%;
+    object-fit: cover;
+}
+    
+
 /*Activités*/
 
 .Activités {
-   padding-top: 1120px;
    margin-left: 20px;
    margin-right: 20px;
  }
