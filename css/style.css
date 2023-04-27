@@ -3,7 +3,8 @@
 /*Body*/
 
 body {
-    margin-left :50px;
+    margin-left :0px auto;
+    max-width: 1440px;
 }
 
 h1,h2,h3,p, button,ul {
@@ -21,11 +22,6 @@ header .logo {
     height: 40px;
     display: flex ;
     margin: 20px;
-    margin-left: -50px ;
-}
-
-header {
-    margin-left: 50px;
 }
 
 /* Header & Nav*/
@@ -140,7 +136,8 @@ background-color:  #DEEBFF;
 .Filtres {
     display:flex;
     gap : 30px;
-    margin-top: 32px;    
+    margin-top: 32px;
+    height:50px;    
 }
 
 .Filtres p { 
@@ -151,7 +148,7 @@ background-color:  #DEEBFF;
 .star-color,.fa-person,.fa-heart, .fa-dog {
     color: #0065FC;
     margin-right: 10px;
-    margin-left: 10px;
+   
 }
 
 p span {
@@ -401,6 +398,7 @@ footer {
 
 body {
     margin-right: 50px;
+    margin-left: 50px;
 }    
 
 /* Header & Nav */
@@ -408,6 +406,10 @@ body {
 .Filtres {
    gap : 0px;
    justify-content: space-around;
+}
+
+.Filtres button {
+    height: 50px
 }
 
 /* Hebergements And Populaires */
@@ -462,7 +464,7 @@ body {
 /*Activités*/
 
 .Activités {
-     width: 100%;
+     width: 99%;
     padding-left: 0;
 }
     
@@ -507,21 +509,7 @@ body {
     
 header {
     display: block;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.header-title {
-    margin-left: 20px;
-    margin-right: 20px
-  }
-
-header .logo {
-    margin-left: 20px;
-}
       
-p {
-    margin-right: 20px;
 }
 
 .logo img {
@@ -530,12 +518,29 @@ p {
     height: 19px;
 }
   
-nav ul {
-    margin: -30px;
+
+header nav li {
+    border-bottom: 3px solid transparent;
+    border-top: 0px solid transparent;
+    padding: 20px;
 }
 
+.header-title {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 90%;
+}
+
+p {
+    margin-left: 20px;
+}
 .Rechercher{ 
     display: none;  
+    margin-left: 20px;
+}
+
+.localisation {
+    margin-left: 20px;
 }
 
 .search {
@@ -544,50 +549,77 @@ nav ul {
     color: white;
     border-radius: 0px 15px 15px 0px;
     padding: 15px;
+    
 }
 
 .Marseille {
-    width:255px;
+    width:82%;
     height: 49px;
 }
 
 .Filtres {
-    display: block;
-    margin-right: 0px;
+    display: flex;
+    flex-wrap:wrap ;
+    margin-top: 0px;
+    gap:0px
 }
+
 
 .Filtres button {
+   
     height: 50px;
-    width: 162.5px;
+    width: 43%;
+    padding: 4px;
+    padding: 10p;
+    margin-top: 10px;
+       
 } 
 
-.info, .Filtres, .icentreville, .localisation {
-    margin-left: 30px;
+.info {
+    margin-left: 20px;
 }
+
+.info p {
+    margin-left: 0px;
+    margin-right: 20px;
+}
+
+
 
 /* Body */
 
 body {
-    margin-right: 0px;
-    margin-left:0px;
+    margin-right: 2px;
+    margin-left: 0px;
 }
 
 /* Hebergements */
 
 .hebergements {
     order: 1;
-    gap:15px;
-    margin-left: 20px;
+    gap:15px; 
+}
+
+.hebergements-cards {
+margin-left: 20px;
+margin-right: 20px;
 }
 
 .s-title {
-padding-top:35px
+padding-top:20px;
+margin-left: 20px;
 }
 
+.Afficher-plus {
+    margin-top: 0px;
+    margin-left: 20px;
+}
 /* Populaires */
 
 .populaires {
     order: 0;
+    width: 100%;
+    margin-top: 20px;
 } 
 
 .populaires-cards {
@@ -601,16 +633,9 @@ padding-top:35px
 
 .populaires-title {
     background-color: #F0F2F6;
-    padding-top: 30px;
+    padding-left: 20px;
 }
 
-.section-title {
-     margin-left: 20px;
-}
-    
-.fa-chart-line{
-    margin-right: 20px;
-}
 
 .populaires-cards .card {
     width: 100%;
@@ -624,6 +649,9 @@ padding-top:35px
     font-size: 13px;
 }
 
+.populaires .fa-chart-line {
+    margin-right: 20px;
+}
 /* Hebergements And Populaires */
     
 .hebergements-and-populaires section{
@@ -634,7 +662,8 @@ padding-top:35px
   
 .hebergements-and-populaires{
     background-color: white;
-    margin-right: -6px;
+    margin-right: 0px;
+   
 }
 
 .hebergements-cards {
@@ -646,7 +675,7 @@ padding-top:35px
 
 .h-card {
     margin-right: 0px;
-    width: 87%;
+    width: 100%;
 }
    
 .hebergements-cards img {
@@ -658,26 +687,37 @@ padding-top:35px
 /*Activités*/
 
 .Activités {
-   margin-left: 20px;
-   margin-right: 20px;
- }
+    width: 100%;
+}
+
+.Activités h1 {
+    margin-left: 20px;
+}
 
  .activités-cards {
     flex-direction: column;
     gap: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
    
  }
 
  .card-activités {
-    width: 92%;
+    width: 100%;
     height: auto;
  }
 
+ .a-card {
+    margin-right: 0px;
+ }
 
+ 
+ 
  /* Footer */
 
  footer {
     width: 100%;
+    padding-top: 0px;
  }
 
 .footer-class {
@@ -686,9 +726,7 @@ padding-top:35px
    flex-direction: column; 
  }
 
- .footer-item {
-    margin-left: 30px;
- }
+ 
 
 
 }
