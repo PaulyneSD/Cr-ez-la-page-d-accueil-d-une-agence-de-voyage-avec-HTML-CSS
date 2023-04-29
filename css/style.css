@@ -3,9 +3,8 @@
 /*Body*/
 
 body {
-    margin-left :0px auto;
+    margin :0px auto;
     max-width: 1440px;
-    margin: 50px;
 }
 
 h1,h2,h3,p, button,ul {
@@ -22,6 +21,7 @@ header{
 header .logo {
     height: 40px;
     display: flex ;
+    padding-top: 30px;
     
 }
 
@@ -535,6 +535,7 @@ header nav li {
 p {
     margin-left: 20px;
 }
+
 .Rechercher{ 
     display: none;  
     margin-left: 20px;
@@ -562,7 +563,8 @@ p {
     display: flex;
     flex-wrap:wrap ;
     margin-top: 0px;
-    gap:0px
+    gap:0px;
+    margin-bottom: 100px;
 }
 
 
@@ -571,7 +573,7 @@ p {
     height: 50px;
     width: 43%;
     padding: 4px;
-    padding: 10p;
+    padding: 10px;
     margin-top: 10px;
        
 } 
